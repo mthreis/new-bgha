@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: myapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PORT=4667
+    ports:
+      - 4667:4667
